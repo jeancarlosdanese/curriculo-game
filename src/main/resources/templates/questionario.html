@@ -7,18 +7,27 @@
 </head>
 <body>
 
+	<img src="img/logo-cetesc.svg" class="img-responsive" alt="Responsive image"/>
+
 	<div class="container">
 
-		<form action="salvar" method="post">
+		<form action="enviar" method="post">
 			<div class="form-group">
 				<label for="nome">Nome completo</label> <input type="text"
 					class="form-control" id="nome" name="nome" placeholder="Nome" />
 			</div>
+
 			<div class="form-group">
 				<label for="quest-1">1 - O Currículo é um documento que reúne informações fundamentais sobre o seu perfil, sua formação escolar, sua evolução profissional, suas habilidades e suas competências.</label>
-                <input type="radio" name="quest-1" value="true"/>Verdadeiro
-  				<input type="radio" name="quest-1" value="false"/>Falso
+				<label class="radio-inline">
+					<input type="radio" name="quest-1" value="true"/>Verdadeiro
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="quest-1" value="false"/>Falso
+				</label>
 			</div>
+			
+			<br></br>
 			<button type="submit" class="btn-success">Enviar dados</button>
 		</form>
 
